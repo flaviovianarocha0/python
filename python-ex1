@@ -1,0 +1,21 @@
+    numbers=[]
+      strings=[]
+      names=["flavio", "viana", "rocha"]
+
+      #number starts here
+      numbers.append(1)
+      numbers.append(2)
+      numbers.append(3)
+
+      #strings starts here
+      strings.append("hello") 
+      strings.append("world")
+
+      #names starts here
+      second_name=names[1]
+
+      #print output
+      print(numbers)
+      print(strings)
+      print(second_name)
+    
