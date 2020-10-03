@@ -11,11 +11,10 @@ git push -u origin master
 # GIT RESET
 git reset --mixed HEAD~1  # --mixed > do not discard changes on commit. 
 
-
 # GIT RESET TO THE INDEX
 git reset HEAD@{index}
 
 # CHANGE LAST MESSAGE ON COMMIT
 git commit --amend
 
-
+#
