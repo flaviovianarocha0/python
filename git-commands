@@ -17,4 +17,4 @@ git reset HEAD@{index}
 # EDIT THE LAST MESSAGE ON COMMIT
 git commit --amend
 
-
+#
