@@ -88,6 +88,14 @@ else:
 
 
 #########################################################
+## DICTIONARY
+
+# dictionary
+my_dic = {
+    "jan": "January",
+    "fev": "February",
+}
+print(my_dic["fev"])
 
 
 
