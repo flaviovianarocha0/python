@@ -70,3 +70,37 @@ print(max_num(50, 2, 4))
 
 #######################################################
 
+## CALCULATOR WITH DIFFERENT OPERATORS
+
+num1 = int(input("enter the first number:\n"))
+operator = str(input("choose the operator (+ or - or / or *):\n"))
+num2 = int(input("enter the second number:\n"))
+if operator == "+":
+    print(num1 + num2)
+elif operator == "*":
+    print(num1 * num2)
+elif operator == "/":
+    print(num1 / num2)
+elif operator == "-":
+    print(num1 - num2)
+else:
+    print("wrong choice")
+
+
+#########################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
