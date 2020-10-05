@@ -14,7 +14,11 @@ git reset --mixed HEAD~1  # --mixed > do not discard changes on commit.
 # GIT RESET TO THE INDEX
 git reset HEAD@{index}
 
-# CHANGE LAST MESSAGE ON COMMIT
+# EDIT THE LAST MESSAGE ON COMMIT
 git commit --amend
 
+<<<<<<< HEAD
 #
+=======
+
+>>>>>>> 78d1ec67dba6761eabed6e1e01fcb4cc09ab17db
