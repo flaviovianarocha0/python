@@ -23,5 +23,36 @@
 #input variable
 name=input("what is your name?\n")
 
-print(name)
 
+
+#####################################################
+# CALCULATOR SIMPLE
+
+while True :
+    num1=input("type any number:")
+    num2=input("now another number:")
+    result=(int(num1) + int(num2))
+    print(result)
+    exit = input("do you want to continue?(y or n):")
+    if exit == "y":
+        continue
+    else:
+        break
+
+######################################################
+
+# GUESS GAME
+
+correct_num = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit :
+    guess = int(input("guess:"))
+    guess_count = guess_count + 1
+    if guess == correct_num :
+        print("you are right")
+        break
+else:
+    print("you have failed")
+
+######################################################
