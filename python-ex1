@@ -98,6 +98,17 @@ my_dic = {
 print(my_dic["fev"])
 
 
+#########################################################
+## POWERING NUMBERS WITH DEF AND FOR LOOPS
+
+def potencia(base, power):
+    result = 1
+    for i in range(power):
+        result = result * base
+    return result
+print(potencia(2, 3))
+
+
 
 
 
