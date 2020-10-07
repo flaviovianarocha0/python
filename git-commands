@@ -17,4 +17,5 @@ git reset HEAD@{index}
 # EDIT THE LAST MESSAGE ON COMMIT
 git commit --amend
 
-#
+# GIT LOG SEEING CHANGES
+git log --since="3 weeks" -p index.html
