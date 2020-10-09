@@ -109,7 +109,16 @@ def potencia(base, power):
 print(potencia(2, 3))
 
 
+#########################################################
 
+## READ A EXTERNAL FILE
+
+test = open("asd.py", "r+")
+print(test.read())
+test.close()
+
+
+###########################################################
 
 
 
