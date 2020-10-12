@@ -120,13 +120,48 @@ test.close()
 
 ###########################################################
 
+#TRANSLATE PROGRAM
+
+raw = " thx thing that I wantxd to txll you is that xvxrthing is connxtxd"
+table = str.maketrans("x", "e")
+result = raw.translate(table)
+print(result)
 
 
+###
+
+raw = "g fmnc wms bgblr rpylqjyrc gr zw fylb. rfyrq ufyr amknsrcpq ypc dmp. bmgle grgl zw fylb gq glcddgagclr ylb rfyr'q ufw rfgq rcvr gq qm jmle. sqgle qrpgle.kyicrpylq() gq pcamkkclbcb. lmu ynnjw ml rfc spj."
+table = str.maketrans("abcdefghijklmnopqrstuvwxyz", "cdefghijklmnopqrstuvwxyzab")
+result = raw.translate(table)
+print(result)
 
 
+###############################################################
 
 
+## CLASS 101
 
+##### Class file
+class python_class:
+    def __init__(self, name, age, surname, married):
+        self.name = name
+        self.age = age
+        self.surname = surname
+        self.married = married
+
+
+##### main file
+from student import python_class
+
+student1 = python_class("flavio", "23", "Viana", True)
+student2 = python_class("Jorge", "44", "Bla", False)
+print(student1.name)
+print(student1.married)
+print(student2.name)
+print("tjhe name of the student one is {}".format(student2.name) + "and the name of the student two is {}.".format(student1.name))
+
+
+################################################################
 
 
 
