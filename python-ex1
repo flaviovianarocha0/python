@@ -163,6 +163,137 @@ print("tjhe name of the student one is {}".format(student2.name) + "and the name
 
 ################################################################
 
+## INHENHERENT
+
+##### Class file (chinese_chef)
+
+from chef import chef
+class chinese_chef(chef):
+
+    def make_chicken(self):
+        print("chinese chef makes chicken")
+
+    def make_salad(self):
+        print("chinese chef makes salad")
+
+
+
+#### Class file (chef)
+
+class chef:
+    def make_eggs(self):
+        print("regular chef make eggs")
+
+    def make_pie(self):
+        print("regular chef makes pie")
+
+
+
+#### MAIN FILE
+
+from chef import chef
+from chinese_chef import chinese_chef
+
+#Instanciando o Objeto
+antonio = chef()
+ricardo = chinese_chef()
+
+# Chamando a função na classe chef
+antonio.make_eggs()
+antonio.make_pie()
+
+# chamando a função na classe chinese_chef
+ricardo.make_salad()
+ricardo.make_chicken()
+
+#herdando da classe chef
+ricardo.make_eggs()
+
+
+##########################################################
+
+
+INHERITANCE EXAMPLE 2
+
+# base class
+class Vehicle():
+    def __init__(self, color):
+        self.color = color
+    def description(self):
+        print("I'm a", self.color, "Vehicle")
+
+# subclass
+class Car(Vehicle):
+    def __init__(self, color, style):
+        super().__init__(color)    # invoke Vehicle’s __init__() method
+        self.style = style
+    def description(self):
+        print("I'm a", self.color, self.style)
+T
+# create an object from each class
+v = Vehicle('Red')
+c = Car('Black', 'SUV')
+
+v.description()
+# Prints I'm a Red Vehicle
+c.description()
+# Prints I'm a Black SUV
+
+############################################################
+
+## INHERITANCE EXMAPLE 3 (inheriting 2 methods from base class)
+
+# base class
+class Vehicle():
+    def __init__(self, color, model):
+        self.color = color
+        self.model = model
+    def description(self):
+        print("I'm a", self.color, "Vehicle and the model is ", self.model)
+
+# subclass
+class Car(Vehicle):
+    def __init__(self, color, model, style):
+        super().__init__(color, model)    # invoke Vehicle’s __init__() method
+        self.style = style
+    def description(self):
+        print("I'm a", self.color, self.model, self.style)
+
+# create an object from each class
+v = Vehicle("Red", "Hat")
+c = Car('Black', 'HAT', 'SUV')
+
+v.description()
+iI'm a Red Vehicle and the model is  Hat
+c.description()
+# Prints I'm a Black HAT SUV
+
+
+##############################################################
+
+#### MULTIPLE INHERITANCE
+
+# base class 1
+class GroundVehicle():
+    def drive(self):
+        print("Drive me on the road!")
+
+# base class 2
+class FlyingVehicle():
+    def fly(self):
+         print("Fly me to the sky!")
+
+# subclass
+class FlyingCar(GroundVehicle, FlyingVehicle):
+    pass
+
+# create an object of a subclass
+fc = FlyingCar()
+
+fc.drive()
+# Prints Drive me on the road!
+fc.fly()
+# Prints Fly me to the sky!
 
 
 
