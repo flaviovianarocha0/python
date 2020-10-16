@@ -24,6 +24,24 @@
 name=input("what is your name?\n")
 
 
+#####################################################
+
+## FOR LOOPS 1
+
+names = ["flavio", "joao", "priscila", "julia"]
+index = 1
+for name in names:
+    print(index, name)
+    index += 1
+
+
+## FOR LOOP 2 (IMPROVED)
+
+names = ["flavio", "joao", "priscila", "julia"]
+for index, name in enumerate(names, start=1):
+    print(index, name)
+    
+
 
 #####################################################
 # CALCULATOR SIMPLE
@@ -88,6 +106,39 @@ else:
 
 
 #########################################################
+
+## CAR GAME
+
+command = ""
+started = False
+
+while True:
+    command = input(" >:").lower()
+    if command == "start":
+        if started:
+            print("Car already started")
+        else:
+            started = True
+            print( "Car started")
+    elif command == "stop":
+        if not started:
+            print("Car already stopped")
+        else:
+            started = False
+            print("Car stopped")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to exit
+        """)
+    elif command == "quit":
+        print("goodbye")
+        break
+
+
+##########################################################
+
 ## DICTIONARY
 
 # dictionary
