@@ -348,4 +348,14 @@ fc.fly()
 
 
 
+################################################################
+
+## X GAME
+numbers=[12, 43, 66, 2, 65]
+
+for number in numbers:
+    output=""
+    for i in range(number):
+        output += "x"
+    print(output)
 
