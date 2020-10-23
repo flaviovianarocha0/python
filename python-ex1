@@ -357,5 +357,107 @@ for number in numbers:
     output=""
     for i in range(number):
         output += "x"
-    print(output)
+
+print(output)
+
+
+
+
+
+###############################################################
+
+## DICE GAME
+import random
+
+class Dice:
+    def roll(self):
+        number1 = random.randint(1, 6)
+        number2 = random.randint(1, 6)
+        return number1, number2
+
+dice = Dice()
+print(dice.roll())
+
+
+################################################################
+
+####### IMPORT PACKAGE AND MODULES
+
+from <package>.<module> import <class>
+
+##############################################################
+
+## PATH VARIABLE - LIST DIR
+
+from pathlib import Path
+
+path = Path("C:/Users/fviana/python")
+
+for i in path.glob('*'):
+    print(i)
+
+#################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
