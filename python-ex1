@@ -396,7 +396,19 @@ path = Path("C:/Users/fviana/python")
 for i in path.glob('*'):
     print(i)
 
+
+
+#### SUBPROCESS (PYTHON RUN COMMAND ON TERMINAL)
+
+import subprocess
+
+list_files = subprocess.run(["ls", "-l"])
+print("The exit code was: %d" % list_files.returncode)
+#
+#
+
 #################################################################
+
 
 
 
