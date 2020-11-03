@@ -409,6 +409,57 @@ print("The exit code was: %d" % list_files.returncode)
 
 #################################################################
 
+## PRINT THE MAX NUMBER
+
+numbers = [1, 54, 23, 55, 44, 99, 54]
+
+
+for number in numbers:
+    repetido = []
+    if number not in repetido:
+        repetido.append(number)
+print(repetido)
+
+
+##################################################################
+
+
+## TABUADA
+
+numero = int(input("Digite um numero de 1 a 10: "))
+result = 0
+for i in range(0, 11):
+    result = numero * i
+    print("{} x {} = {}".format(numero, i, result))
+
+
+#################################################################
+
+
+## PORCENTAGEM
+# aplicar aumento de 15%
+salario = float(input("Digite seu salario: "))
+porcento = salario * 15 /100
+total = salario + porcento
+print(total)
+
+
+
+
+
+
+# aplicar desconto de 5%
+preco = float(input("Digite o preço do produto: "))
+porcento = (preco * 5 / 100)
+print(porcento)
+desconto = preco - (preco * 5 / 100)
+
+
+print(desconto)
+
+
+###################################################################
+
 
 
 
