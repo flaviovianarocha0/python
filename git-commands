@@ -20,3 +20,9 @@ git commit --amend
 
 # GIT LOG SEEING CHANGES
 git log --since="3 weeks" -p index.html
+
+#GIT LOG DECORATE
+$ git log --graph --oneline --decorate
+
+adding date to have diff
+
