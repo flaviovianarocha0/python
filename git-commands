@@ -26,3 +26,4 @@ $ git log --graph --oneline --decorate
 adding date to have diff
 a
 b
+c
