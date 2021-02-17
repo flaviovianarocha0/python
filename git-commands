@@ -24,4 +24,8 @@ git log --since="3 weeks" -p index.html
 $ git log --graph --oneline --decorate
 
 adding date to have diff
+<<<<<<< HEAD
 adding content on slave branch
+=======
+
+>>>>>>> ecfac3abca0b86dcd0cd5fe8a4245f7831d370b3
